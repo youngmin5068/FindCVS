@@ -24,7 +24,7 @@ class LocationInformationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         mapView.delegate = self
         locationManager.delegate = self
         
@@ -33,10 +33,8 @@ class LocationInformationViewController: UIViewController {
         layout()
     }
     
-    private func bind(_ viewModel: LocationInformationViewModel) {
-        
-        detailListBackgroundView.bind(viewModel.detailListBackgroundViewModel)
-        
+    func bind(_ viewModel: LocationInformationViewModel) {
+     
         viewModel.setMapCenter
             .emit(to: self.mapView.rx.setMapCenterPoint)
             .disposed(by: disposeBag)
@@ -64,6 +62,7 @@ class LocationInformationViewController: UIViewController {
             .emit(to: self.rx.showSelectedLocation)
             .disposed(by: disposeBag)
         
+        //MARK: View -> ViewModel
         detailList.rx.itemSelected
             .map{$0.row}
             .bind(to:viewModel.detailListItemSelected)
@@ -73,6 +72,9 @@ class LocationInformationViewController: UIViewController {
         currentLocationButton.rx.tap
             .bind(to: viewModel.currentLocationButtonTapped)
             .disposed(by: disposeBag)
+        
+        detailListBackgroundView.bind(viewModel.detailListBackgroundViewModel)
+        
     }
     
     private func attribute() {
@@ -157,6 +159,7 @@ extension LocationInformationViewController : MTMapViewDelegate {
 }
 
 extension Reactive where Base : MTMapView {
+   
     var setMapCenterPoint: Binder<MTMapPoint> {
         return Binder(base){ base, point in
             base.setMapCenter(point, animated: true)
@@ -165,6 +168,7 @@ extension Reactive where Base : MTMapView {
 }
 
 extension Reactive where Base : LocationInformationViewController {
+    
     var presentAlert: Binder<String> {
         return Binder(base){ base, message in
             let alertController = UIAlertController(title: "문제 발생", message: message, preferredStyle: .alert)

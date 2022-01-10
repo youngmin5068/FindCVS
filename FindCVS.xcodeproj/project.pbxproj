@@ -11,9 +11,6 @@
 		FB55C607278BEAD6009C1C32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55C606278BEAD6009C1C32 /* SceneDelegate.swift */; };
 		FB55C60E278BEAD8009C1C32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB55C60D278BEAD8009C1C32 /* Assets.xcassets */; };
 		FB55C611278BEAD8009C1C32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB55C60F278BEAD8009C1C32 /* LaunchScreen.storyboard */; };
-		FB55C66D278BEFD1009C1C32 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB55C66C278BEFD1009C1C32 /* SystemConfiguration.framework */; };
-		FB55C671278BEFF8009C1C32 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB55C670278BEFF8009C1C32 /* CoreLocation.framework */; };
-		FB55C673278BF007009C1C32 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB55C672278BF007009C1C32 /* OpenGLES.framework */; };
 		FB55C69B278BF01F009C1C32 /* map_pinup_custom@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB55C676278BF01F009C1C32 /* map_pinup_custom@3x.png */; };
 		FB55C69C278BF01F009C1C32 /* map_pin_custom.png in Resources */ = {isa = PBXBuildFile; fileRef = FB55C677278BF01F009C1C32 /* map_pin_custom.png */; };
 		FB55C69D278BF01F009C1C32 /* shadow_balloon.png in Resources */ = {isa = PBXBuildFile; fileRef = FB55C678278BF01F009C1C32 /* shadow_balloon.png */; };
@@ -42,10 +39,6 @@
 		FB55C6B4278BF01F009C1C32 /* daum_th_line.png in Resources */ = {isa = PBXBuildFile; fileRef = FB55C698278BF01F009C1C32 /* daum_th_line.png */; };
 		FB55C6B5278BF01F009C1C32 /* map_pin_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = FB55C699278BF01F009C1C32 /* map_pin_shadow.png */; };
 		FB55C6B6278BF01F009C1C32 /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB55C69A278BF01F009C1C32 /* DaumMap.framework */; };
-		FB55C6B8278BF0BD009C1C32 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB55C66B278BEFC4009C1C32 /* QuartzCore.framework */; };
-		FB55C6B9278BF0FC009C1C32 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB55C66F278BEFEB009C1C32 /* libc++.tbd */; };
-		FB55C6BA278BF103009C1C32 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB55C66E278BEFDD009C1C32 /* libxml2.tbd */; };
-		FB55C6C0278BF129009C1C32 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB55C6BF278BF129009C1C32 /* libsqlite3.tbd */; };
 		FB55C6C2278BF5BC009C1C32 /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55C6C1278BF5BC009C1C32 /* LocationData.swift */; };
 		FB55C6C5278BF618009C1C32 /* KLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55C6C4278BF618009C1C32 /* KLDocument.swift */; };
 		FB55C6C7278BF725009C1C32 /* DetailListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55C6C6278BF725009C1C32 /* DetailListCellData.swift */; };
@@ -58,9 +51,20 @@
 		FB55C6D7278C0BFE009C1C32 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = FB55C6D6278C0BFE009C1C32 /* RxBlocking */; };
 		FB55C6DA278C0C11009C1C32 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FB55C6D9278C0C11009C1C32 /* SnapKit */; };
 		FB55C6DC278C1F10009C1C32 /* MTMapViewError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55C6DB278C1F10009C1C32 /* MTMapViewError.swift */; };
-		FB55C6DE278C257A009C1C32 /* DetialListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55C6DD278C257A009C1C32 /* DetialListCell.swift */; };
+		FB55C6DE278C257A009C1C32 /* DetailListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55C6DD278C257A009C1C32 /* DetailListCell.swift */; };
 		FB55C6E0278C27BC009C1C32 /* DetailListBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55C6DF278C27BC009C1C32 /* DetailListBackgroundView.swift */; };
 		FB55C6E2278C27C9009C1C32 /* DetailBackgroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55C6E1278C27C9009C1C32 /* DetailBackgroundViewModel.swift */; };
+		FB55C6E4278C5BF7009C1C32 /* LocalAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55C6E3278C5BF7009C1C32 /* LocalAPI.swift */; };
+		FB55C6E6278C5D19009C1C32 /* LocalNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55C6E5278C5D19009C1C32 /* LocalNetwork.swift */; };
+		FB55C6E8278C5F57009C1C32 /* LocationInformationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55C6E7278C5F57009C1C32 /* LocationInformationModel.swift */; };
+		FBF10EBF278C69C0008D171B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB55C66F278BEFEB009C1C32 /* libc++.tbd */; };
+		FBF10EC0278C69CB008D171B /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB55C66E278BEFDD009C1C32 /* libxml2.tbd */; };
+		FBF10EC1278C69D6008D171B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB55C6BF278BF129009C1C32 /* libsqlite3.tbd */; };
+		FBF10EC2278C69DF008D171B /* libswiftQuartzCore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB55C66A278BEFC4009C1C32 /* libswiftQuartzCore.tbd */; };
+		FBF10EC3278C69E9008D171B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB55C66C278BEFD1009C1C32 /* SystemConfiguration.framework */; };
+		FBF10EC4278C69F2008D171B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB55C66B278BEFC4009C1C32 /* QuartzCore.framework */; };
+		FBF10EC5278C69F9008D171B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB55C672278BF007009C1C32 /* OpenGLES.framework */; };
+		FBF10EC6278C69FF008D171B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB55C670278BEFF8009C1C32 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,9 +125,12 @@
 		FB55C6C8278C08D0009C1C32 /* LocationInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationViewController.swift; sourceTree = "<group>"; };
 		FB55C6CB278C0AE3009C1C32 /* LocationInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationViewModel.swift; sourceTree = "<group>"; };
 		FB55C6DB278C1F10009C1C32 /* MTMapViewError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTMapViewError.swift; sourceTree = "<group>"; };
-		FB55C6DD278C257A009C1C32 /* DetialListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetialListCell.swift; sourceTree = "<group>"; };
+		FB55C6DD278C257A009C1C32 /* DetailListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCell.swift; sourceTree = "<group>"; };
 		FB55C6DF278C27BC009C1C32 /* DetailListBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListBackgroundView.swift; sourceTree = "<group>"; };
 		FB55C6E1278C27C9009C1C32 /* DetailBackgroundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBackgroundViewModel.swift; sourceTree = "<group>"; };
+		FB55C6E3278C5BF7009C1C32 /* LocalAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAPI.swift; sourceTree = "<group>"; };
+		FB55C6E5278C5D19009C1C32 /* LocalNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetwork.swift; sourceTree = "<group>"; };
+		FB55C6E7278C5F57009C1C32 /* LocationInformationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,19 +138,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBF10EC6278C69FF008D171B /* CoreLocation.framework in Frameworks */,
+				FBF10EC5278C69F9008D171B /* OpenGLES.framework in Frameworks */,
+				FBF10EC4278C69F2008D171B /* QuartzCore.framework in Frameworks */,
+				FBF10EC3278C69E9008D171B /* SystemConfiguration.framework in Frameworks */,
+				FBF10EC2278C69DF008D171B /* libswiftQuartzCore.tbd in Frameworks */,
+				FBF10EC1278C69D6008D171B /* libsqlite3.tbd in Frameworks */,
+				FBF10EC0278C69CB008D171B /* libxml2.tbd in Frameworks */,
+				FBF10EBF278C69C0008D171B /* libc++.tbd in Frameworks */,
 				FB55C6D1278C0BFE009C1C32 /* RxTest in Frameworks */,
 				FB55C6CF278C0BFE009C1C32 /* RxSwift in Frameworks */,
-				FB55C6C0278BF129009C1C32 /* libsqlite3.tbd in Frameworks */,
 				FB55C6DA278C0C11009C1C32 /* SnapKit in Frameworks */,
-				FB55C6BA278BF103009C1C32 /* libxml2.tbd in Frameworks */,
-				FB55C6B9278BF0FC009C1C32 /* libc++.tbd in Frameworks */,
 				FB55C6D7278C0BFE009C1C32 /* RxBlocking in Frameworks */,
-				FB55C6B8278BF0BD009C1C32 /* QuartzCore.framework in Frameworks */,
 				FB55C6D5278C0BFE009C1C32 /* RxCocoa in Frameworks */,
-				FB55C671278BEFF8009C1C32 /* CoreLocation.framework in Frameworks */,
-				FB55C66D278BEFD1009C1C32 /* SystemConfiguration.framework in Frameworks */,
 				FB55C6B6278BF01F009C1C32 /* DaumMap.framework in Frameworks */,
-				FB55C673278BF007009C1C32 /* OpenGLES.framework in Frameworks */,
 				FB55C6D3278C0BFE009C1C32 /* RxRelay in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,6 +182,8 @@
 				FB55C6B7278BF04D009C1C32 /* BridgingHeader.h */,
 				FB55C604278BEAD6009C1C32 /* AppDelegate.swift */,
 				FB55C606278BEAD6009C1C32 /* SceneDelegate.swift */,
+				FB55C6E3278C5BF7009C1C32 /* LocalAPI.swift */,
+				FB55C6E5278C5D19009C1C32 /* LocalNetwork.swift */,
 				FB55C6CA278C0AAB009C1C32 /* Presentation */,
 				FB55C6C3278BF5C0009C1C32 /* Entites */,
 				FB55C60D278BEAD8009C1C32 /* Assets.xcassets */,
@@ -274,7 +284,8 @@
 			children = (
 				FB55C6C8278C08D0009C1C32 /* LocationInformationViewController.swift */,
 				FB55C6CB278C0AE3009C1C32 /* LocationInformationViewModel.swift */,
-				FB55C6DD278C257A009C1C32 /* DetialListCell.swift */,
+				FB55C6E7278C5F57009C1C32 /* LocationInformationModel.swift */,
+				FB55C6DD278C257A009C1C32 /* DetailListCell.swift */,
 				FB55C6DF278C27BC009C1C32 /* DetailListBackgroundView.swift */,
 				FB55C6E1278C27C9009C1C32 /* DetailBackgroundViewModel.swift */,
 			);
@@ -393,13 +404,16 @@
 				FB55C6E0278C27BC009C1C32 /* DetailListBackgroundView.swift in Sources */,
 				FB55C6C5278BF618009C1C32 /* KLDocument.swift in Sources */,
 				FB55C6C9278C08D0009C1C32 /* LocationInformationViewController.swift in Sources */,
+				FB55C6E6278C5D19009C1C32 /* LocalNetwork.swift in Sources */,
 				FB55C6DC278C1F10009C1C32 /* MTMapViewError.swift in Sources */,
 				FB55C605278BEAD6009C1C32 /* AppDelegate.swift in Sources */,
+				FB55C6E4278C5BF7009C1C32 /* LocalAPI.swift in Sources */,
 				FB55C6C7278BF725009C1C32 /* DetailListCellData.swift in Sources */,
 				FB55C607278BEAD6009C1C32 /* SceneDelegate.swift in Sources */,
 				FB55C6E2278C27C9009C1C32 /* DetailBackgroundViewModel.swift in Sources */,
+				FB55C6E8278C5F57009C1C32 /* LocationInformationModel.swift in Sources */,
 				FB55C6CC278C0AE3009C1C32 /* LocationInformationViewModel.swift in Sources */,
-				FB55C6DE278C257A009C1C32 /* DetialListCell.swift in Sources */,
+				FB55C6DE278C257A009C1C32 /* DetailListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +468,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -515,6 +530,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -549,6 +565,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Keem-ym.FindCVS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/gim-yeongmin/Desktop/IOS/FindCVS/FindCVS/BridgingHeader.h";
@@ -572,6 +592,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Keem-ym.FindCVS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
