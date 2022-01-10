@@ -48,6 +48,9 @@
 		FB55C6B9278BF0FC009C1C32 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB55C66F278BEFEB009C1C32 /* libc++.tbd */; };
 		FB55C6BA278BF103009C1C32 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB55C66E278BEFDD009C1C32 /* libxml2.tbd */; };
 		FB55C6C0278BF129009C1C32 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB55C6BF278BF129009C1C32 /* libsqlite3.tbd */; };
+		FB55C6C2278BF5BC009C1C32 /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55C6C1278BF5BC009C1C32 /* LocationData.swift */; };
+		FB55C6C5278BF618009C1C32 /* KLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55C6C4278BF618009C1C32 /* KLDocument.swift */; };
+		FB55C6C7278BF725009C1C32 /* DetailListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55C6C6278BF725009C1C32 /* DetailListCellData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +107,9 @@
 		FB55C69A278BF01F009C1C32 /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DaumMap.framework; sourceTree = "<group>"; };
 		FB55C6B7278BF04D009C1C32 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		FB55C6BF278BF129009C1C32 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		FB55C6C1278BF5BC009C1C32 /* LocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
+		FB55C6C4278BF618009C1C32 /* KLDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLDocument.swift; sourceTree = "<group>"; };
+		FB55C6C6278BF725009C1C32 /* DetailListCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCellData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,7 @@
 				FB55C604278BEAD6009C1C32 /* AppDelegate.swift */,
 				FB55C606278BEAD6009C1C32 /* SceneDelegate.swift */,
 				FB55C608278BEAD6009C1C32 /* ViewController.swift */,
+				FB55C6C3278BF5C0009C1C32 /* Entites */,
 				FB55C60A278BEAD6009C1C32 /* Main.storyboard */,
 				FB55C60D278BEAD8009C1C32 /* Assets.xcassets */,
 				FB55C60F278BEAD8009C1C32 /* LaunchScreen.storyboard */,
@@ -230,6 +237,16 @@
 				FB55C68D278BF01F009C1C32 /* MTMapCircle.h */,
 			);
 			path = Headers;
+			sourceTree = "<group>";
+		};
+		FB55C6C3278BF5C0009C1C32 /* Entites */ = {
+			isa = PBXGroup;
+			children = (
+				FB55C6C1278BF5BC009C1C32 /* LocationData.swift */,
+				FB55C6C4278BF618009C1C32 /* KLDocument.swift */,
+				FB55C6C6278BF725009C1C32 /* DetailListCellData.swift */,
+			);
+			path = Entites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,8 +346,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB55C6C2278BF5BC009C1C32 /* LocationData.swift in Sources */,
+				FB55C6C5278BF618009C1C32 /* KLDocument.swift in Sources */,
 				FB55C609278BEAD6009C1C32 /* ViewController.swift in Sources */,
 				FB55C605278BEAD6009C1C32 /* AppDelegate.swift in Sources */,
+				FB55C6C7278BF725009C1C32 /* DetailListCellData.swift in Sources */,
 				FB55C607278BEAD6009C1C32 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
