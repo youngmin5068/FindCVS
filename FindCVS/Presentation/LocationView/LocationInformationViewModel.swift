@@ -76,14 +76,7 @@ struct LocationInformationViewModel {
         //TableView의 편의점 리스트 중 하나 고름
         let selectDetailListItem = detailListItemSelected
             .withLatestFrom(documentData) { $1[$0] }
-            .map{ data -> MTMapPoint in
-                guard let longtitude = Double(data.x),
-                      let latitude = Double(data.y) else {
-                    return MTMapPoint()
-                }
-                let geoCoord = MTMapPointGeo(latitude: latitude, longitude: longtitude)
-                return MTMapPoint(geoCoord: geoCoord)
-            }
+            .map(model.documentToMTMapPoint)
         //-> 이해 완료
         
         

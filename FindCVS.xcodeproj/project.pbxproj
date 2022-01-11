@@ -13,6 +13,7 @@
 		FB1FB643278D57AF00BAA3C2 /* networkDummy.json in Resources */ = {isa = PBXBuildFile; fileRef = FB1FB642278D57AF00BAA3C2 /* networkDummy.json */; };
 		FB1FB645278D582D00BAA3C2 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1FB644278D582D00BAA3C2 /* Dummy.swift */; };
 		FB1FB647278D596600BAA3C2 /* LocatioInformationModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1FB646278D596600BAA3C2 /* LocatioInformationModelTests.swift */; };
+		FB1FB649278D5C5300BAA3C2 /* LocationInformationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1FB648278D5C5300BAA3C2 /* LocationInformationViewModelTests.swift */; };
 		FB55C605278BEAD6009C1C32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55C604278BEAD6009C1C32 /* AppDelegate.swift */; };
 		FB55C607278BEAD6009C1C32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55C606278BEAD6009C1C32 /* SceneDelegate.swift */; };
 		FB55C60E278BEAD8009C1C32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB55C60D278BEAD8009C1C32 /* Assets.xcassets */; };
@@ -88,6 +89,7 @@
 		FB1FB642278D57AF00BAA3C2 /* networkDummy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = networkDummy.json; sourceTree = "<group>"; };
 		FB1FB644278D582D00BAA3C2 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 		FB1FB646278D596600BAA3C2 /* LocatioInformationModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocatioInformationModelTests.swift; sourceTree = "<group>"; };
+		FB1FB648278D5C5300BAA3C2 /* LocationInformationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationViewModelTests.swift; sourceTree = "<group>"; };
 		FB55C601278BEAD6009C1C32 /* FindCVS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindCVS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB55C604278BEAD6009C1C32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB55C606278BEAD6009C1C32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				FB1FB642278D57AF00BAA3C2 /* networkDummy.json */,
 				FB1FB644278D582D00BAA3C2 /* Dummy.swift */,
 				FB1FB646278D596600BAA3C2 /* LocatioInformationModelTests.swift */,
+				FB1FB648278D5C5300BAA3C2 /* LocationInformationViewModelTests.swift */,
 			);
 			path = FindCVSTests;
 			sourceTree = "<group>";
@@ -560,6 +563,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB1FB649278D5C5300BAA3C2 /* LocationInformationViewModelTests.swift in Sources */,
 				FB1FB645278D582D00BAA3C2 /* Dummy.swift in Sources */,
 				FB1FB641278D560A00BAA3C2 /* LocalNetworkStop.swift in Sources */,
 				FB1FB647278D596600BAA3C2 /* LocatioInformationModelTests.swift in Sources */,
